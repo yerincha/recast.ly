@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Search from './Search.js';
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
@@ -41,15 +42,29 @@ class App extends React.Component {
   }
 
   render() {
+=======
+import VideoList from './VideoList.js';
+import videoPlayer from './VideoPlayer.js'; 
+import Search from './Search.js';
+
+class App extends React.Component {
+
+  render () {
+>>>>>>> 98324faaeec4d889b7d0ecf74919c1512044c488
     return (
       <div>
         <nav className="navbar">
           <div className="col-md-6 offset-md-3">
+<<<<<<< HEAD
             <Search searchClick={this.searchClick} />
+=======
+            <div><h5><em>search</em> view goes here</h5></div>
+>>>>>>> 98324faaeec4d889b7d0ecf74919c1512044c488
           </div>
         </nav>
         <div className="row">
           <div className="col-md-7">
+<<<<<<< HEAD
             <div><VideoPlayer video={this.state.currentVideo} /></div>
           </div>
           <div className="col-md-5">
@@ -59,7 +74,22 @@ class App extends React.Component {
       </div>);
   }
 }
+=======
+            <div><h5><em>videoPlayer</em> view goes here</h5></div>
+          </div>
+          <div className="col-md-5">
+            <div><h5><em>videoList</em> view goes here</h5></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+  
+
+>>>>>>> 98324faaeec4d889b7d0ecf74919c1512044c488
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 export default App;
+
