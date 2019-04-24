@@ -25,7 +25,7 @@ class App extends React.Component {
 
   searchClick() {
     var searchKeyword = document.getElementsByClassName("form-control")['0'].value;
-    var options = {type: 'video', part: 'snippet', maxResults: 5, q: searchKeyword, key: YOUTUBE_API_KEY};
+    var options = { type: 'video', part: 'snippet', maxResults: 5, q: searchKeyword, key: YOUTUBE_API_KEY };
     searchYouTube(options, this.setVideoList);
   }
 
@@ -41,10 +41,11 @@ class App extends React.Component {
   }
 
   render() {
-    return (<div>
+    return (
+      <div>
         <nav className="navbar">
           <div className="col-md-6 offset-md-3">
-            <Search searchClick={this.searchClick}/>
+            <Search searchClick={this.searchClick} />
           </div>
         </nav>
         <div className="row">
